@@ -1,0 +1,25 @@
+<script>
+			//const 定义变量不可修改，必须进行初始化
+			const c = 2;  
+			alert(c);
+			
+			//var   定义的变量可以修改，如果不初始化会输出undefined，不会报错。
+			var a = 1;
+			console.log("函数外var定义a: " + a);  //  1
+			function change(){
+				a = 3;
+				console.log("函数内部var定义a: " + a);   // 3
+			}
+			change();
+			console.log("函数调用后var定义a为函数内部修改值：" + a);  //3
+			
+			//let   是块级作用域，函数内部使用let定义后，对函数外部无影响。
+			let b = 1;
+			console.log("函数外var定义b: " + b);  //  1
+			function change1(){
+				let b = 3;
+				console.log("函数外var定义b: " + b);  //  3
+			}
+			change1();
+			console.log("函数调用后let定义b不受函数内部定义影响： " + b);  //1
+		</script>
