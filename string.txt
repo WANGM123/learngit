@@ -1,0 +1,19 @@
+<script>
+			var str = "adbcjjjssaaa";
+			console.log(str.length);  //12
+			console.log(str.charAt(2));  //b
+			console.log(str.charCodeAt(0));  //97
+			console.log(String.fromCharCode(97,98,99));  //abc
+			console.log(str.indexOf('a'));  //0
+			console.log(str.indexOf('m'));  //-1    字符串中没有，也就是没有找见返回-1
+			console.log(str.lastIndexOf('a'));   //11
+			console.log(str.lastIndexOf('a',3));  //0   从第三个位置往前索引
+			console.log(str.search(/d/i));  //返回1  检索与正则表达式相匹配的子字符串
+			console.log(str.match('h'));  //没有匹配结果，返回为null
+			console.log(str.substring(1,4));  //dbc  截取
+			console.log(str.slice(4)); 
+			console.log(str.slice(-3,-1));  //aa  -1 指字符串的最后一个字符,从后往前算起
+			console.log(str.substr(1,5)); //dbcjj  从第一位截取，截取长度为5
+			console.log(str.replace('a','A'));  //Adbjjjssaaa  只替换一次，替换最前面的
+			console.log(str.replace(/a/g, 'A'));    //加上正则表达式 进行多次替换
+		</script>
